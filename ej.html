@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudas y preguntas frecuentes</title>
+    <link rel="stylesheet" href="st.css"> <!-- Vincula el archivo CSS -->
+</head>
+<body>
+    <nav>
+        <h2>
+            <a href="1.html" style="color: white; text-decoration: none;">Menú Principal</a>
+        </h2>
+        <ul>
+            <li><a href="3.html">Reservar Mesa</a></li>
+            <li>
+                <a href="#crear-cuenta">Crear Cuenta</a>
+                <ul class="submenu">
+                    <li><a href="2.html">Iniciar Sesión</a></li>
+                    <li><a href="#registrar-cuenta">Registrar Cuenta</a></li>
+                </ul>
+            </li>
+            <li><a href="4.html">Ver Menú</a></li>
+            <li><a href="#historial-reservas">Administrar Reserva</a></li>
+            <li><a href="ej.html">Preguntas Frecuentes</a></li>
+            <li><a href="#cerrar-sesion">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div id="chatContainer">
+        <div id="messages"></div>
+        <div id="questionList">
+            <strong>Preguntas frecuentes:</strong><br>
+            <span class="question" onclick="askQuestion('¿Cómo puedo hacer una reserva?')">¿Cómo puedo hacer una reserva?</span><br>
+            <span class="question" onclick="askQuestion('¿Puedo modificar mi reserva?')">¿Puedo modificar mi reserva?</span><br>
+            <span class="question" onclick="askQuestion('¿Cuántas personas pueden asistir?')">¿Cuántas personas pueden asistir?</span><br>
+            <span class="question" onclick="askQuestion('¿Cuál es el horario del restaurante?')">¿Cuál es el horario del restaurante?</span><br>
+            <span class="question" onclick="askQuestion('¿Qué opciones de menú ofrecen?')">¿Qué opciones de menú ofrecen?</span><br>
+            <span class="question" onclick="askQuestion('¿Aceptan reservas para eventos especiales?')">¿Aceptan reservas para eventos especiales?</span><br>
+            <span class="question" onclick="askQuestion('¿Qué medidas de seguridad están en vigor?')">¿Qué medidas de seguridad están en vigor?</span><br>
+            <span class="question" onclick="askQuestion('¿Puedo reservar una mesa al aire libre?')">¿Puedo reservar una mesa al aire libre?</span><br>
+            <span class="question" onclick="askQuestion('¿Cuánto tiempo antes debo hacer una reserva?')">¿Cuánto tiempo antes debo hacer una reserva?</span><br>
+            <span class="question" onclick="askQuestion('¿Hay un cargo por reservar?')">¿Hay un cargo por reservar?</span><br>
+            <span class="question" onclick="askQuestion('¿Cómo puedo cancelar mi reserva?')">¿Cómo puedo cancelar mi reserva?</span><br>
+            <span class="question" onclick="askQuestion('¿Qué pasa si llego tarde a mi reserva?')">¿Qué pasa si llego tarde a mi reserva?</span><br>
+            <span class="question" onclick="askQuestion('¿Tienen opciones vegetarianas o veganas?')">¿Tienen opciones vegetarianas o veganas?</span><br>
+            <span class="question" onclick="askQuestion('¿Ofrecen servicio a domicilio?')">¿Ofrecen servicio a domicilio?</span><br>
+            <span class="question" onclick="askQuestion('¿Tienen menú para niños?')">¿Tienen menú para niños?</span><br>
+        </div>
+    </div>
+
+    <script src="jss.js"></script> <!-- Vincula el archivo JavaScript -->
+</body>
+</html>

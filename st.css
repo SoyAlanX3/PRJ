@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0; /* Color de fondo suave (naranja claro) */
+    margin: 0;
+    padding-top: 70px; /* Espacio para el menú fijo */
+}
+
+nav {
+    background-color: #ff7043; /* Naranja vibrante */
+    color: white;
+    width: 100%;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000; /* Por encima de otros elementos */
+}
+
+nav h2 {
+    margin: 0;
+    padding: 10px 15px; /* Espaciado alrededor del título */
+    display: inline-block; /* Alinea el título con los enlaces */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Alinea horizontalmente */
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block; /* En línea */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Espaciado de enlaces */
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffab40; /* Naranja más claro al pasar el ratón */
+}
+
+.submenu {
+    display: none; /* Oculta el submenú inicialmente */
+    position: absolute;
+    top: 100%; /* Justo debajo del elemento padre */
+    left: 0;
+    background-color: #ffab40; /* Naranja claro */
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0; /* Para animación */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones */
+    transform: translateY(-10px); /* Desplazamiento hacia arriba */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Muestra el submenú al pasar el ratón */
+    opacity: 1; /* Aumenta opacidad */
+    transform: translateY(0); /* Posición original */
+}
+
+.submenu li {
+    display: block; /* Elementos del submenú como bloques */
+}
+
+.submenu li a {
+    padding: 10px 20px; /* Padding para enlaces del submenú */
+}
+
+.submenu li a:hover {
+    background-color: #66bb6a; /* Verde al pasar el ratón */
+}
+
+#chatContainer {
+    max-width: 600px; /* Ancho máximo del contenedor del chat */
+    margin: 20px auto; /* Centramos el contenedor */
+    padding: 20px;
+    background-color: white; /* Fondo blanco para el contenedor del chat */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el contenedor */
+}
+
+#messages {
+    height: 300px; /* Altura fija para el área de mensajes */
+    overflow-y: auto; /* Habilita desplazamiento vertical */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Color de fondo del área de mensajes */
+}
+
+.userMessage, .botMessage {
+    margin-bottom: 10px; /* Espacio entre mensajes */
+}
+
+.userMessage {
+    color: #ff7043; /* Color para mensajes del usuario */
+}
+
+.botMessage {
+    color: #66bb6a; /* Color para mensajes del bot */
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #66bb6a; /* Verde para botones */
+    co
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #66bb6a;
+    color: white;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
